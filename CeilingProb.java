@@ -1,20 +1,20 @@
-public class BinaraySearch {
+public class CeilingProb {
     public static void main(String[] args) {
         int[] arr = {2,4,7,9};
-        System.out.println(binaray(arr,6));
+        System.out.println(ceiling(arr,8));
     }
 
-    static int binaray(int[] arr, int target){
+    static int ceiling(int[] arr, int target){
         int ans = search(arr,0,arr.length-1,target);
         return ans;
     }
 
-    private static int search(int[] arr, int start, int end, int target) {
+    static int search(int[] arr, int start, int end, int target) {
 
         int mid = start + (end - start)/2; 
         if(end>=start){
             if(arr[mid] == target){
-                return mid;
+                return arr[mid];
             }
             
             if(arr[mid]>target){
@@ -24,6 +24,6 @@ public class BinaraySearch {
             return search(arr, mid + 1, end, target);
         }
 
-        return -1;
+        return arr[start];
     }
 }
