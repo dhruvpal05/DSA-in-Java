@@ -1,8 +1,8 @@
 package Linkedlist;
- /**
-  * PalindromLL
-  */
- public class PalindromLL {
+/**
+ * PalindromLL
+ */
+public class PalindromLL {
     public class ListNode {
         int val;
         ListNode next;
@@ -19,22 +19,23 @@ package Linkedlist;
             this.next = next;
         }
     }
+
     public ListNode reverseList(ListNode head) {
-        ListNode prev = null;  
+        ListNode prev = null;
         ListNode current = head;
-    
-        
-        while(current != null) { 
-            ListNode next = current.next; 
+
+        while (current != null) {
+            ListNode next = current.next;
             current.next = prev;
             prev = current;
             current = next;
         }
-       return prev; 
+        return prev;
     }
 
     public boolean isPalindrome(ListNode head) {
-        if(head == null || head.next == null) return true;
+        if (head == null || head.next == null)
+            return true;
         ListNode f = head;
         ListNode s = head;
         ListNode prev = null;
@@ -50,8 +51,5 @@ package Linkedlist;
             prev = mid;
             mid = next;
         }
-
-
     }
-    
- }
+}
