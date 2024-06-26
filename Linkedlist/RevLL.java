@@ -33,6 +33,29 @@ public class RevLL {
             tail.next = null;
     
         }
+        // normal reversal
+        private void reverse2(ListNode node){
+            ListNode prev = null;
+            ListNode current = node;
+
+            while (current != null) {
+                ListNode next = current.next;
+                current.next = prev;
+                prev = current;
+                current = next;
+            }
+        }
+    }
+
+    public ListNode getMid(ListNode head){
+        ListNode s = head;
+        ListNode f = head;
+        while (f != null && f.next != null) {
+            s = s.next;
+            f = f.next.next;
+        }
+
+        return s;
     }
     
 
