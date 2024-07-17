@@ -12,35 +12,41 @@ public class ZigzagLevel {
         }
         Deque<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
+        boolean leftToRight = true;
+
         while (!queue.isEmpty()) {
             int levelSize = queue.size();
-            int count = 1;
-            List<Integer> list = new ArrayList<>();
-            if (count % 2 == 0) {
-                for (int i = 0; i > levelSize; i++) {
-                    TreeNode curTreeNode = queue.pollLast();
+            List<Integer> list = new ArrayList<>(levelSize);
+            Deque<TreeNode> nextLevel = new LinkedList<>();
+
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode curTreeNode;
+                if (leftToRight) {
+                    curTreeNode = queue.pollFirst();
                     list.add(curTreeNode.val);
                     if (curTreeNode.left != null) {
-                        queue.offer(curTreeNode.left);
+                        nextLevel.addLast(curTreeNode);
                     }
                     if (curTreeNode.right != null) {
-                        queue.offer(curTreeNode.right);
+                        nextLevel.addLast(curTreeNode.right);
                     }
-                }
-            } else {
-                for (int i = 0; i < levelSize; i++) {
-                    TreeNode curTreeNode = queue.pollFirst();
+                } else {
+                    curTreeNode = queue.pollLast();
                     list.add(curTreeNode.val);
-                    if (curTreeNode.left != null) {
-                        queue.offer(curTreeNode.left);
-                    }
                     if (curTreeNode.right != null) {
-                        queue.offer(curTreeNode.right);
+                        nextLevel.addFirst(curTreeNode.right);
+                    }
+                    if (curTreeNode.left != null) {
+                        nextLevel.addFirst(curTreeNode.left);
                     }
                 }
             }
+
             res.add(list);
+            queue = nextLevel;
+            leftToRight = !leftToRight;
         }
+
         return res;
     }
 }
