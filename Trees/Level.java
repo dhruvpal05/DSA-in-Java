@@ -28,8 +28,6 @@ public class Level {
             }
             res.add(list);
         }
-
         return res;
-
     }
 }
