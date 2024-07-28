@@ -44,4 +44,8 @@ public class HouseRobber {
 
         return dp[n];
     }
+
+    public int rob(int[] nums) {
+        
+    }
 }
