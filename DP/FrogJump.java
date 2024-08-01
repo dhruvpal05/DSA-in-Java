@@ -54,6 +54,12 @@ public class FrogJump {
 
         return dp[n] = min;
     }
+    public int minimizeCost(int arr[], int k) {
+        int n = arr.length;
+        int[] dp = new int[n+1];
+        Arrays.fill(dp, -1);
+        return helper2(n,k,arr,dp);
+    }
 
 
 
