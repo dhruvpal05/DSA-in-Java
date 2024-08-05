@@ -1,13 +1,9 @@
 package DP;
 
-import java.util.ArrayList;
-
-import Searching.hello;
-
 public class HouseRobber {
     public static long houseRobber(int[] valueInHouse) {
 		int n = valueInHouse.length;
-        long[] dp = new long[valueInHouse.length];
+        int[] dp = new int[valueInHouse.length];
 
         for (int i = 0; i < dp.length; i++) {
             dp[i] = -1;

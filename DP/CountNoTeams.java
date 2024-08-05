@@ -7,18 +7,14 @@ public class CountNoTeams {
         for (int i = 0; i < dp.length; i++) {
             dp[i] = -1;
         }
-        return helperMax(rating,n,dp,0,Integer.MAX_VALUE)+helperMin(rating,n,dp,0,Integer.MIN_VALUE);
-    }
-
-    private int helperMin(int[] rating, int n, int[] dp, int i, int current) {
-
+        return helperMax(rating,n,dp,0,Integer.MAX_VALUE);
     }
 
     private int helperMax(int[] rating, int n, int[] dp, int count, int current) {
         if (n == 0) {
             return 0;
         }
-
+        return current;
     }
 
     public int numTeams(int[] rating) {
