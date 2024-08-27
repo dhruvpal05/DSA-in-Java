@@ -1,4 +1,4 @@
-public class ArrayToBT {
+public class ArrayToBST {
     public TreeNode sortedArrayToBST(int[] nums) {
         int l = 0;
         int r = nums.length - 1;
@@ -9,7 +9,7 @@ public class ArrayToBT {
 
         if (l > r) {
             return null;
-        }
+        }   
 
         int mid = (l + r) / 2;
         TreeNode root = new TreeNode(nums[mid]);

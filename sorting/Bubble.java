@@ -1,6 +1,12 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Bubble {
     public static void main(String[] args) {
-        
+        int[] arr = {2,3,1,5,9,7};
+        System.out.println(Arrays.toString(arr) );
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr) );
     }
 
     static void bubbleSort(int[] arr){

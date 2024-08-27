@@ -1,4 +1,4 @@
-package Trees;
+// package Trees;
 
 class BST {
     public class Node {

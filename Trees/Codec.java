@@ -24,6 +24,7 @@ public class Codec {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        
+        TreeNode node = new TreeNode();
+        return node;
     }
 }
