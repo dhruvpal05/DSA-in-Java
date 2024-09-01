@@ -4,12 +4,24 @@ import java.util.Arrays;
 
 public class MissingNumber {
     public int missingNumber(int[] nums) {
-        Arrays.sort(nums);
-        for (int i = 0; i < nums.length; i++) {
-            if (i+1 < nums.length && nums[i] + 1 != nums[i+1]) {
-                return nums[i]+1;
+        int i = 0;
+        while (i < nums.length) {
+            int correctIndex = nums[i];
+            if (correctIndex < nums.length && nums[i] != nums[correctIndex]) {
+                int temp = nums[i];
+                nums[i] = nums[correctIndex];
+                nums[correctIndex] = temp;
+            } else {
+                i++;
             }
         }
-        return -1;
+
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != j) {
+                return j;
+            }
+        }
+        return nums.length;
     }
+
 }
