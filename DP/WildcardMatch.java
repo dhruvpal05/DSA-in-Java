@@ -1,7 +1,7 @@
 package DP;
 
 public class WildcardMatch {
-    public boolean isMatch(String s, String p) {
+    public boolean isMatch1(String s, String p) {
         int n = s.length();
         int m = p.length();
 

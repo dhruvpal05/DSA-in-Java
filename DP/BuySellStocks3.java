@@ -1,3 +1,5 @@
+package DP;
+
 public class BuySellStocks3 {
     public int maxProfit(int[] prices) {
         int n = prices.length;
