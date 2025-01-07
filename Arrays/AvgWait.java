@@ -18,6 +18,6 @@ public class AvgWait {
     }
     public static void main(String[] args) {
         int[][] customers = {{1,2},{2,5},{4,3}};
-        averageWaitingTime(customers);
+        averageWaitingTime(customers);                          
     }
 }

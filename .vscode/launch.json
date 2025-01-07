@@ -6,6 +6,181 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringMatching",
+            "request": "launch",
+            "mainClass": "StringMatching",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "KthElement",
+            "request": "launch",
+            "mainClass": "BinarySearch.KthElement",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "XORofOcc",
+            "request": "launch",
+            "mainClass": "XORofOcc",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "DoSelect",
+            "request": "launch",
+            "mainClass": "DoSelect",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "MedianSortedArr",
+            "request": "launch",
+            "mainClass": "BinarySearch.MedianSortedArr",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "ShiftingLetter2",
+            "request": "launch",
+            "mainClass": "ShiftingLetter2",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "CodeChef",
+            "request": "launch",
+            "mainClass": "Codechef.CodeChef",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Codechef",
+            "request": "launch",
+            "mainClass": "Codechef.Codechef",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Contests.Main",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Code",
+            "request": "launch",
+            "mainClass": "Contests.Code",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Maze",
+            "request": "launch",
+            "mainClass": "Recursion.Maze",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Dice",
+            "request": "launch",
+            "mainClass": "Recursion.Dice",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "LetterCombination",
+            "request": "launch",
+            "mainClass": "Recursion.LetterCombination",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "KthPerm",
+            "request": "launch",
+            "mainClass": "Recursion.KthPerm",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Permulation",
+            "request": "launch",
+            "mainClass": "Recursion.Permulation",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "RemoveA",
+            "request": "launch",
+            "mainClass": "Recursion.RemoveA",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "FiveFactor",
+            "request": "launch",
+            "mainClass": "Recursion.FiveFactor",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "SubsetSum",
+            "request": "launch",
+            "mainClass": "Recursion.SubsetSum",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "StringRamdom",
+            "request": "launch",
+            "mainClass": "StringRamdom",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "PrimeFactor",
+            "request": "launch",
+            "mainClass": "PrimeFactor",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "LLCycle2",
+            "request": "launch",
+            "mainClass": "Linkedlist.LLCycle2",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "RepeatLimit",
+            "request": "launch",
+            "mainClass": "Greedy.RepeatLimit",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Duplicate",
+            "request": "launch",
+            "mainClass": "Arrays.StriverSDE.Duplicate",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "ShortedJobFirst",
+            "request": "launch",
+            "mainClass": "Greedy.ShortedJobFirst",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "MinArrEnd",
+            "request": "launch",
+            "mainClass": "Bitmanipulation.MinArrEnd",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
             "name": "IthBit",
             "request": "launch",
             "mainClass": "Bitmanipulation.IthBit",
