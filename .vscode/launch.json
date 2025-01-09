@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MInHeap",
+            "request": "launch",
+            "mainClass": "MInHeap",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "MergeKArr",
+            "request": "launch",
+            "mainClass": "MergeKArr",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "MedianFinder",
+            "request": "launch",
+            "mainClass": "MedianFinder",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "MaxSumComb",
+            "request": "launch",
+            "mainClass": "MaxSumComb",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "CountSufxPrifix",
+            "request": "launch",
+            "mainClass": "CountSufxPrifix",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "Kthlargest",
+            "request": "launch",
+            "mainClass": "Kthlargest",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
             "name": "StringMatching",
             "request": "launch",
             "mainClass": "StringMatching",

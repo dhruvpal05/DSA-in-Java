@@ -20,13 +20,10 @@ public class MyQueue {
             while (first.size() > 1) {
                 second.push(first.pop());
             }
-    
             int ans = first.pop();
-    
             while (!second.isEmpty()) {
                 first.push(second.pop());
             }
-    
             return ans;
         }
         return -1;
@@ -37,17 +34,13 @@ public class MyQueue {
             while (first.size() > 1) {
                 second.push(first.pop());
             }
-    
             int ans = first.peek();
-    
             while (!second.isEmpty()) {
                 first.push(second.pop());
             }
-    
             return ans;
         }
         return -1;
-        
     }
 
     public boolean empty() {
