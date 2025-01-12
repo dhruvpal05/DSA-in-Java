@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LongestCommPre",
+            "request": "launch",
+            "mainClass": "LongestCommPre",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "ReverseWord",
+            "request": "launch",
+            "mainClass": "ReverseWord",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "SortStack",
+            "request": "launch",
+            "mainClass": "Stackandqueue.SortStack",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "NextGreter",
+            "request": "launch",
+            "mainClass": "Stackandqueue.NextGreter",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
             "name": "MInHeap",
             "request": "launch",
             "mainClass": "MInHeap",
