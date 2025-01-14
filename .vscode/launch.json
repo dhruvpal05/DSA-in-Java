@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinLength",
+            "request": "launch",
+            "mainClass": "MinLength",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
             "name": "LongestCommPre",
             "request": "launch",
             "mainClass": "LongestCommPre",
