@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AtoiStr",
+            "request": "launch",
+            "mainClass": "AtoiStr",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
             "name": "MinLength",
             "request": "launch",
             "mainClass": "MinLength",
