@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinCostIdentical",
+            "request": "launch",
+            "mainClass": "Arrays.MinCostIdentical",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
+            "name": "MaxDiffAdj",
+            "request": "launch",
+            "mainClass": "Arrays.MaxDiffAdj",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
             "name": "AtoiStr",
             "request": "launch",
             "mainClass": "AtoiStr",
