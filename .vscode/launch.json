@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GridGame",
+            "request": "launch",
+            "mainClass": "Arrays.GridGame",
+            "projectName": "DSA-in-Java_7d016046"
+        },
+        {
+            "type": "java",
             "name": "MinCostIdentical",
             "request": "launch",
             "mainClass": "Arrays.MinCostIdentical",
