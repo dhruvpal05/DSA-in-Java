@@ -1,4 +1,5 @@
 Understanding static:
+changes
 
 When a member is declared static, it can be accessed before any objects of its class are created,
 and without reference to any object. You can declare both methods and variables to be static.
