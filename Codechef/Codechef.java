@@ -166,32 +166,70 @@ class CodeChef {
 	}
 
 	// Main Method
-	public static void main(String[] args) {
-		FastIO io = new FastIO();
+    public static int minCostTransformation(String A, String B) {
+        // If sorted characters don't match, transformation is impossible
+        char[] sortedA = A.toCharArray();
+        char[] sortedB = B.toCharArray();
+        Arrays.sort(sortedA);
+        Arrays.sort(sortedB);
+        
+        if (!Arrays.equals(sortedA, sortedB)) {
+            return -1;
+        }
+        
+        List<Character> aList = new ArrayList<>();
+        for (char c : A.toCharArray()) {
+            aList.add(c);
+        }
+        
+        int totalCost = 0;
+        
+        // Transform to B
+        for (char targetChar : B.toCharArray()) {
+            // Find the index of target character
+            int index = aList.indexOf(targetChar);
+            
+            // If character not found, transformation is impossible
+            if (index == -1) {
+                return -1;
+            }
+            
+            // Add cost and remove character
+            totalCost += index;
+            aList.remove(index);
+        }
+        
+        return totalCost;
+    }
+    
+    public static void main(String[] args) throws IOException {
+        FastIO io = new FastIO();
 
-		int t = io.nextInt(); // Number of test cases
-		while (t-- > 0) {
-			// Example usage
-			int n = io.nextInt();
-			String s = io.nextLine();
-			int countZero = 0;
-			int countOne = 0;
-			for (int i = 0; i < n; i++) {
-				if (s.charAt(i) == '0') {
-					countZero++;
-				} else {
-					countOne++;
-				}
-			}
-			if (countZero == 0) {
-				io.println(countOne + "");
-			} else if (countOne == 0) {
-				io.println(countZero + "");
-			} else if (countZero == 0 && countOne == 0) {
-				io.println(0 + "");
+        int t = io.nextInt();
+        while (t-- > 0) {
+            String A = io.next();
+            String B = io.next();
+            
+            // Calculate and print result
+            int result = minCostTransformation(A, B);
+			System.out.println(result);
+        }
+        
+        // io.close();
+    }
+	// Function to compute the longest non-decreasing subarray
+	static int longestStreak(int[] arr, int n) {
+		int maxLen = 1, currLen = 1;
+
+		for (int i = 1; i < n; i++) {
+			if (arr[i] >= arr[i - 1]) {
+				currLen++;
 			} else {
-				System.out.println(1 + "");
+				maxLen = Math.max(maxLen, currLen);
+				currLen = 1;
 			}
 		}
+
+		return Math.max(maxLen, currLen);
 	}
 }

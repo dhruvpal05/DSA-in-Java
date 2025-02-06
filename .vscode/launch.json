@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeChef",
+            "request": "launch",
+            "mainClass": "Codechef.CodeChef",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "MaxAcs",
+            "request": "launch",
+            "mainClass": "Arrays.MaxAcs",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "TopView",
+            "request": "launch",
+            "mainClass": "TopView",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "GridGame",
             "request": "launch",
             "mainClass": "Arrays.GridGame",
