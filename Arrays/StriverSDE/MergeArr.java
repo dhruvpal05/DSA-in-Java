@@ -1,3 +1,5 @@
+package Arrays.StriverSDE;
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
@@ -31,7 +33,7 @@ public class MergeArr {
         int m = 3;
         int n = 3;
         // int[] ans = ma.merge(nums1, m, nums2, n);
-        for (int i : ans) {
+        for (int i : nums1) {
             System.out.print(i + " ");
         }
     }

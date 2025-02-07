@@ -1,4 +1,4 @@
-package String;
+// package String;
 
 public class NoOfSenior {
     // bad code 

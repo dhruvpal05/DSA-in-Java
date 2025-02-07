@@ -10,7 +10,7 @@ public class SumOfSorted {
         }
         
         ArrayList<Integer> list = new ArrayList<>();
-        int sum = new int;
+        int sum = 0;
         
         for (int i = 0; i < nums.length; i++) {
             int currentSum = 0;

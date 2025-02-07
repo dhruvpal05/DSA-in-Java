@@ -34,6 +34,7 @@ public class MergeKArr {
         }
         ArrayList<Integer> ans = new ArrayList<>();
         int j=0;
+                return ans;
         
     }
 }

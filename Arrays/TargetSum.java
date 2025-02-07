@@ -5,6 +5,6 @@ public class TargetSum {
     }
 
     static int findTargetSumWays(int[] nums, int target){
-        
+        return 0;
     }
 }

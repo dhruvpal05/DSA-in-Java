@@ -1,5 +1,4 @@
-// package Arrays;
-
+package Arrays;
 public class MagicGrid {
     class Solution {
 

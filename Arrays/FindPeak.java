@@ -1,3 +1,5 @@
+package Arrays;
+
 public class FindPeak {
     public int findPeakElement(int[] nums) {
         int high = 0;

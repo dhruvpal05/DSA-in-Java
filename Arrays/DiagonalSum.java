@@ -8,7 +8,7 @@ public class DiagonalSum {
                 ans += mat[i][mat.length - 1 - i];
             }
             if (mat.length%2 != 0) {
-                ans -= mat[mat.length/2][mat.length/2]
+                ans -= mat[mat.length/2][mat.length/2];
             }
             return ans;
     }

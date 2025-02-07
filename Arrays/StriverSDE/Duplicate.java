@@ -1,3 +1,5 @@
+package Arrays.StriverSDE;
+
 import java.util.Arrays;
 
 public class Duplicate {

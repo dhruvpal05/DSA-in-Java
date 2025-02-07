@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Arrays2 {
     public int findMin(int[] nums) {
         int low = 0;

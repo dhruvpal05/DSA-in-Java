@@ -1,4 +1,4 @@
-package String;
+// package String;
 
 public class MinDel {
     public int minimumDeletions(String s) {

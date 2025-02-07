@@ -28,7 +28,7 @@ public class Intersectionof2Arr {
         // Convert the list to an array
         int[] result;
         
-        result = intersection.toArray( new int[intersection.size()]);
+        result = new int[intersection.size()];
         
         return result;
     }

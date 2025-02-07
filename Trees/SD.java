@@ -21,7 +21,7 @@ class SD {
   
     TreeNode deserialize(ArrayList<String> list) {
       Collections.reverse(list);
-      TreeNode node = helper2(list);
+      TreeNode node = helper(list);
       return node;
     }
     TreeNode helper(ArrayList<String> list) {
@@ -33,8 +33,8 @@ class SD {
       
       TreeNode node = new TreeNode(Integer.parseInt(val));
   
-      node.left = helper2(list);
-      node.right = helper2(list);
+      node.left = helper(list);
+      node.right = helper(list);
   
       return node;
     }

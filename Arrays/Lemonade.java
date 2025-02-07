@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Lemonade {
     public boolean lemonadeChange(int[] bills) {
         int cash = 0;

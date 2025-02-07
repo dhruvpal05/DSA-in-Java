@@ -1,8 +1,7 @@
 package Searching;
 public class RevStrArry {
     public static void main(String[] args) {
-        char[] s = new char[5];
-        s = {"h","e","l","l","o"};
+        char[] s = {'h', 'e', 'l', 'l', 'o'};
         
     }
 

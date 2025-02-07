@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Logfolder {
     public int minOperations(String[] logs) {
         int step = 0;

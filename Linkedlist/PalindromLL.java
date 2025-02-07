@@ -1,4 +1,5 @@
 package Linkedlist;
+
 /**
  * PalindromLL
  */
@@ -51,5 +52,6 @@ public class PalindromLL {
             prev = mid;
             mid = next;
         }
+        return false;
     }
 }

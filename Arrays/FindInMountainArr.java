@@ -2,15 +2,16 @@ package Arrays;
 
 public class FindInMountainArr {
     interface MountainArray {
-        public int get(int index) {}
+        // public int get(int index) {}
 
-        public int length() {}
+        // public int length() {}
     }
 
     public int findInMountainArray(int target, MountainArray mountainArr) {
         int s = 0;
-        int e = mountainArr.length() -1;
-        int peak = peakIndexInMountainArray()
+        // int e = mountainArr.length() -1;
+        int peak = peakIndexInMountainArray(null);
+        return  peak;
     }
     public int peakIndexInMountainArray(int[] arr) {
         int s = 0;
