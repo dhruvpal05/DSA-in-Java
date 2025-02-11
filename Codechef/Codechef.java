@@ -166,57 +166,54 @@ class CodeChef {
 	}
 
 	// Main Method
-    public static int minCostTransformation(String A, String B) {
-        // If sorted characters don't match, transformation is impossible
-        char[] sortedA = A.toCharArray();
-        char[] sortedB = B.toCharArray();
-        Arrays.sort(sortedA);
-        Arrays.sort(sortedB);
-        
-        if (!Arrays.equals(sortedA, sortedB)) {
-            return -1;
-        }
-        
-        List<Character> aList = new ArrayList<>();
-        for (char c : A.toCharArray()) {
-            aList.add(c);
-        }
-        
-        int totalCost = 0;
-        
-        // Transform to B
-        for (char targetChar : B.toCharArray()) {
-            // Find the index of target character
-            int index = aList.indexOf(targetChar);
-            
-            // If character not found, transformation is impossible
-            if (index == -1) {
-                return -1;
-            }
-            
-            // Add cost and remove character
-            totalCost += index;
-            aList.remove(index);
-        }
-        
-        return totalCost;
-    }
-    
-    public static void main(String[] args) throws IOException {
-        FastIO io = new FastIO();
+	public static int minCostTransformation(String A, String B) {
+		// If sorted characters don't match, transformation is impossible
+		char[] sortedA = A.toCharArray();
+		char[] sortedB = B.toCharArray();
+		Arrays.sort(sortedA);
+		Arrays.sort(sortedB);
 
-        int t = io.nextInt();
-        while (t-- > 0) {
-            String A = io.next();
-            String B = io.next();
-            
-            // Calculate and print result
-            int result = minCostTransformation(A, B);
-			System.out.println(result);
-        }
-        
-        // io.close();
-    }
+		if (!Arrays.equals(sortedA, sortedB)) {
+			return -1;
+		}
+
+		List<Character> aList = new ArrayList<>();
+		for (char c : A.toCharArray()) {
+			aList.add(c);
+		}
+
+		int totalCost = 0;
+
+		// Transform to B
+		for (char targetChar : B.toCharArray()) {
+			// Find the index of target character
+			int index = aList.indexOf(targetChar);
+
+			// If character not found, transformation is impossible
+			if (index == -1) {
+				return -1;
+			}
+
+			// Add cost and remove character
+			totalCost += index;
+			aList.remove(index);
+		}
+
+		return totalCost;
+	}
+
+	public static void main(String[] args) throws IOException {
+		FastIO io = new FastIO();
+
+		int t = io.nextInt();
+		while (t-- > 0) {
+			StringBuilder sb = new StringBuilder(io.next());
+			System.out.println(sb.substring(0, sb.length() - 2) + "i");
+		}
+
+		// io.close();
+	}
+
 	// Function to compute the longest non-decreasing subarray
 	static int longestStreak(int[] arr, int n) {
 		int maxLen = 1, currLen = 1;
