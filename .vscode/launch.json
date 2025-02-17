@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SeparateSq",
+            "request": "launch",
+            "mainClass": "Arrays.SeparateSq",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "GoodSum",
+            "request": "launch",
+            "mainClass": "Arrays.GoodSum",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "CodeChef",
             "request": "launch",
             "mainClass": "Codechef.CodeChef",

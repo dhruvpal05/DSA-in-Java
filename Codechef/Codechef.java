@@ -205,11 +205,9 @@ class CodeChef {
 	public static void main(String[] args) throws IOException {
 		FastIO io = new FastIO();
 
-		int t = io.nextInt();
-		while (t-- > 0) {
-			StringBuilder sb = new StringBuilder(io.next());
-			System.out.println(sb.substring(0, sb.length() - 2) + "i");
-		}
+		int x = io.nextInt();
+		int y = io.nextInt();
+		System.out.println((y * 10) + x);
 
 		// io.close();
 	}
