@@ -18,7 +18,7 @@ public class DFS {
         ans.add(i);
         ArrayList<Integer> list = adj.get(i);
         for(int l : list){
-            if (visited[l]) {
+            if (!visited[l]) {
                 dfs(l, visited, adj, ans);
             }
         }
