@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StrContest",
+            "request": "launch",
+            "mainClass": "compareable.StrContest",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "RevDeg",
+            "request": "launch",
+            "mainClass": "RevDeg",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "SeparateSq",
             "request": "launch",
             "mainClass": "Arrays.SeparateSq",
