@@ -1,5 +1,5 @@
-import java.util.HashMap;
-import java.util.List;
+package Maps;
+import java.util.*;
 
 public class PartitionLabs {
     public List<Integer> partitionLabels(String s) {

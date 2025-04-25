@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AbstractDemo.Main",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "FairPairs",
+            "request": "launch",
+            "mainClass": "BinarySearch.FairPairs",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "LargestDivSubset",
+            "request": "launch",
+            "mainClass": "DP.LargestDivSubset",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "StrContest",
             "request": "launch",
             "mainClass": "compareable.StrContest",

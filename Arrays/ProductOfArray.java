@@ -5,23 +5,26 @@ import java.util.List;
 
 public class ProductOfArray {
     public int[] productExceptSelf(int[] nums) {
-        int[] prefix = new int[nums.length];
-        int[] postfix = new int[nums.length];
-        int[] ans = new int[nums.length];
-        if (nums.length > 0) {
-            prefix[0] = nums[0];
-            for (int i = 1; i < prefix.length; i++) {
-                prefix[i] = nums[i] * prefix[i - 1];
-            }
-            postfix[nums.length-1] = nums[nums.length - 1];
-            for (int i = nums.length - 2; i < postfix.length; i--) {
-                postfix[i] = postfix[i+1]*nums[i]; 
-            }
+        int n = nums.length;
+        int[] prefix = new int[n];
+        int[] postfix = new int[n];
+        prefix[0] = 1;
+        for (int i = 1; i < n; i++) {
+            prefix[i] = nums[i - 1] * prefix[i - 1];
         }
-        for (int i = 0; i < nums.length; i++) {
-            ans[i] = prefix[i]*postfix[i];
+        postfix[n - 1] = 1;
+        for (int i = n - 2; i >= 0; i--) {
+            postfix[i] = nums[i + 1] * postfix[i + 1];
+        }
+        int[] ans = new int[n];
+        for (int i = 0; i < n; i++) {
+            if (i == 0)
+                ans[i] = postfix[i + 1];
+            else if (i == n - 1)
+                ans[i] = prefix[i - 1];
+            else
+                ans[i] = prefix[i - 1] * postfix[i + 1];
         }
         return ans;
-
     }
 }
