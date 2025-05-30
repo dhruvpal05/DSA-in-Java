@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ques14",
+            "request": "launch",
+            "mainClass": "Ques14",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "AbstractDemo.Main",
