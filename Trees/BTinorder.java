@@ -36,4 +36,23 @@ public class BTinorder {
         result.add(node.val);
         inorderTraversal(node.right, result);
     }
+
+    public int kthSmallest(TreeNode root, int k) {
+        return helper(0,root,k);
+    }
+
+    private int helper(int i, TreeNode root, int k) {
+        i++;
+        if (i == k) {
+            return root.val;
+        }
+        if (root == null) {
+            return 0;
+        }
+
+        helper(i, root.left, k);
+        helper(i, root, k);
+
+        return 0;
+    }
 }
