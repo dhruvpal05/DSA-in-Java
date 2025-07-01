@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LenOfLIS",
+            "request": "launch",
+            "mainClass": "DP.LenOfLIS",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "DivideStr",
+            "request": "launch",
+            "mainClass": "DivideStr",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "GraphCycle",
+            "request": "launch",
+            "mainClass": "Graphs.GraphCycle",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "MaxMinFreq",
+            "request": "launch",
+            "mainClass": "Maps.MaxMinFreq",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "Contest",
+            "request": "launch",
+            "mainClass": "Leetcode.Contest",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "Ques14",
             "request": "launch",
             "mainClass": "Ques14",
