@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "General",
+            "request": "launch",
+            "mainClass": "Recursion.General",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "GenParen",
+            "request": "launch",
+            "mainClass": "Recursion.GenParen",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "KthStr",
+            "request": "launch",
+            "mainClass": "Bitmanipulation.KthStr",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "LenOfLIS",
             "request": "launch",
             "mainClass": "DP.LenOfLIS",

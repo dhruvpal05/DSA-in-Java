@@ -48,7 +48,7 @@ public class binarySubSeq {
             return nums[i];
         }
         int take = helper(i+1, n, nums) + nums[i];
-        int nottake = helper(i+1, n, nums)
+        int nottake = helper(i+1, n, nums);
         return Math.max(take, nottake);
     }
 }
