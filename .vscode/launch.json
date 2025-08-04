@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KthPermutation",
+            "request": "launch",
+            "mainClass": "Recursion.KthPermutation",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "Permulation",
+            "request": "launch",
+            "mainClass": "Recursion.Permulation",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "Subset",
+            "request": "launch",
+            "mainClass": "Recursion.Subset",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "Subsets",
+            "request": "launch",
+            "mainClass": "Recursion.Subsets",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "CombinationSum",
+            "request": "launch",
+            "mainClass": "Recursion.CombinationSum",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "Recursion.MergeSort",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
+            "name": "Contest",
+            "request": "launch",
+            "mainClass": "Codechef.Contest",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "General",
             "request": "launch",
             "mainClass": "Recursion.General",
