@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IthBit",
+            "request": "launch",
+            "mainClass": "Bitmanipulation.IthBit",
+            "projectName": "DSA-in-Java_1f97f43e"
+        },
+        {
+            "type": "java",
             "name": "KthPermutation",
             "request": "launch",
             "mainClass": "Recursion.KthPermutation",

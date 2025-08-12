@@ -13,7 +13,7 @@ public class LongestPalinSubstr {
         return true;
     }
 
-    public String longestPalindrome(String s) {
+    public String longestPalindrome1(String s) {
         int n = s.length();
         int max = Integer.MIN_VALUE;
         int start = 0;
@@ -29,5 +29,24 @@ public class LongestPalinSubstr {
         }
 
         return s.substring(start, start + max);
+    }
+
+    public String longestPalindrome(String s) {
+        int ans = 1;
+        int start = 0;
+        int end = 0;
+
+        int n = s.length();
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; i < n; j++) {
+                if (isPalindrome(s, i, j) && s.substring(i, j + 1).length() > ans) {
+                    ans = s.substring(i, j + 1).length();
+                    start = i;
+                    end = j;
+                }
+            }
+        }
+
+        return s.substring(start, end + 1);
     }
 }
